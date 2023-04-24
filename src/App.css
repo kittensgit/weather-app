@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,8 +10,17 @@ body {
   font-family: monospace;
 }
 
-.weather-info__temp {
+.weather__temp {
   font-size: 4rem;
+  font-weight: bold;
+}
+
+.weather__title {
+  font-size: 20px;
+}
+
+.weather-info__description {
+  font-size: 18px;
 }
 
 .app {
@@ -20,7 +31,7 @@ body {
   background-color: rgba(0, 0, 0, 0, 4);
 }
 
-.app:before{
+.app:before {
   content: '';
   background: url('./img/pexels-pixabay-33834.jpg') no-repeat center center/cover;
   position: absolute;
@@ -33,16 +44,30 @@ body {
 
 .container {
   max-width: 700px;
-  height: 600px;
+  height: 550px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
   top: 10%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .weather-info {
-  display: flex;  
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  color: black;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 24px;
 }

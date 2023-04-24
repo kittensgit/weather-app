@@ -4,26 +4,29 @@ function App() {
   return (
     <div className='app'>
       <div className='container'>
-        <header className='header'>
-          <div className='header__title'>
+        <div className='top'>
+          <div className='weather__title'>
             <p>Dnepr</p>
           </div>
-        </header>
-        <div className='weather-info'>
-          <div className='weather-info__temp'>
+          <div className='weather__temp'>
             <h1>17º</h1>
           </div>
           <div className='weather-info__description'>
             <p>Clouds</p>
           </div>
+        </div>
+        <div className='weather-info'>
           <div className='weather-info__feels'>
-            <p>19º</p>
+            <p className='bold'>19º</p>
+            <p>fells like</p>
           </div>
           <div className='weather-info__humidity'>
-            <p>90%</p>
+            <p className='bold'>90%</p>
+            <p>humidity</p>
           </div>
           <div className='weather-info__wind'>
-            <p>20mph</p>
+            <p className='bold'>20mph</p>
+            <p>wind speed</p>
           </div>
         </div>
       </div>
