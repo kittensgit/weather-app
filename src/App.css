@@ -44,7 +44,7 @@ body {
 
 .container {
   max-width: 700px;
-  height: 550px;
+  height: 502px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -70,4 +70,23 @@ body {
 .bold {
   font-weight: 800;
   font-size: 24px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.search__input {
+  padding: .7rem 1.5rem;
+  font-size: 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+::placeholder{
+  color: #fff;
 }
